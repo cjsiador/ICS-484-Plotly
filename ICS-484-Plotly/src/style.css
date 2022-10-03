@@ -21,7 +21,7 @@ html
 .section
 {
     display: flex;
-    align-items: center;
+    align-items: start;
     height: 100vh;
     position: relative;
     font-family: 'Cabin', sans-serif;
@@ -31,6 +31,7 @@ html
     padding-left: 10%;
     padding-right: 10%;
     /* background: #76c5e40e */
+    border: 3px solid blue;
 }
 
 .section1

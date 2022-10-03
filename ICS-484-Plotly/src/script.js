@@ -228,7 +228,7 @@ window.addEventListener('scroll', () =>
     if(currentSection == 1)
     {
         console.log("Current Section is now 1");
-        document.body.style.backgroundColor = "#13518b";
+        document.body.style.backgroundColor = "#131862";
         document.body.style.transition = "all 1s";
         // wellModel.scene.position.y = -10 * scrollY
         // gsap.to(wellModel.position, { duration: 2, y: -14 })
@@ -237,14 +237,28 @@ window.addEventListener('scroll', () =>
     if(currentSection == 2)
     {
         console.log("Current Section is now 2");
-        document.body.style.backgroundColor = "#2d3882";
+        document.body.style.backgroundColor = "#0c104f";
         document.body.style.transition = "all 1s"
     }
 
     if(currentSection == 3)
     {
         console.log("Current Section is now 3");
-        document.body.style.backgroundColor = "#272121";
+        document.body.style.backgroundColor = "#05083b";
+        document.body.style.transition = "all 1s"
+    }
+
+    if(currentSection == 4)
+    {
+        console.log("Current Section is now 3");
+        document.body.style.backgroundColor = "#030530";
+        document.body.style.transition = "all 1s"
+    }
+
+    if(currentSection == 5)
+    {
+        console.log("Current Section is now 3");
+        document.body.style.backgroundColor = "#01021a";
         document.body.style.transition = "all 1s"
     }
 // background-image: linear-gradient(to bottom right, #2d3882, #00aeef);

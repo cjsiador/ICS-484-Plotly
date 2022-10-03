@@ -1,6 +1,8 @@
-d3.tsv("./datas/choleraDeaths.tsv", function(err, rows){
+d3.tsv("./datas/naplesCholeraAgeSexData.tsv", function(err, rows){
 
-  var idName = "myDiv"
+  console.log(rows)
+
+  var idName = "myDiv1"
 
   function unpack(rows, key) {
   return rows.map(function(row) { return row[key]; });
@@ -49,8 +51,8 @@ var bb = gd.getBoundingClientRect();
 
 var layout = {
   autosize: true,
-  title: "1854 London Cholera Outbreak Attacks And Deaths",
-  width: 1000,
+  title: "Naples: Gender Distribution by Age",
+  width: bb.width,
   height: bb.height,
   paper_bgcolor: 'rgba(0,0,0,0)',
   plot_bgcolor: 'rgba(0,0,0,30)',
