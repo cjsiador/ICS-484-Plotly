@@ -100,7 +100,8 @@ const material = new THREE.MeshStandardMaterial({
 const ageMesh = new THREE.Mesh( geometry, material );
 scene.add( ageMesh );
 
-ageMesh.position.set(2, -28, 1)
+ageMesh.position.set(2, -19, 1)
+ageMesh.rotation.x = -0.6
 
 const map = new THREE.PlaneGeometry( 3, 3 );
 const mamTexture = new THREE.TextureLoader().load('textures/images/map.jpg')
@@ -112,6 +113,7 @@ const mapMesh = new THREE.Mesh( map, mapMaterial );
 scene.add( mapMesh );
 
 mapMesh.position.set(-3, -35, 1)
+mapMesh.rotation.x = -0.6
 
 /**
  * Lights
@@ -227,7 +229,6 @@ window.addEventListener('scroll', () =>
 
     if(currentSection == 1)
     {
-        console.log("Current Section is now 1");
         document.body.style.backgroundColor = "#131862";
         document.body.style.transition = "all 1s";
         // wellModel.scene.position.y = -10 * scrollY
@@ -236,28 +237,24 @@ window.addEventListener('scroll', () =>
     
     if(currentSection == 2)
     {
-        console.log("Current Section is now 2");
         document.body.style.backgroundColor = "#0c104f";
         document.body.style.transition = "all 1s"
     }
 
     if(currentSection == 3)
     {
-        console.log("Current Section is now 3");
         document.body.style.backgroundColor = "#05083b";
         document.body.style.transition = "all 1s"
     }
 
     if(currentSection == 4)
     {
-        console.log("Current Section is now 3");
         document.body.style.backgroundColor = "#030530";
         document.body.style.transition = "all 1s"
     }
 
     if(currentSection == 5)
     {
-        console.log("Current Section is now 3");
         document.body.style.backgroundColor = "#01021a";
         document.body.style.transition = "all 1s"
     }
@@ -306,7 +303,7 @@ const tick = () =>
     mapMesh.rotation.y += (parallaxX - mapMesh.rotation.y + 0.3) * 5 * deltaTime
     
     ageMesh.rotation.y += (parallaxX - ageMesh.rotation.y - 0.3) * 5 * deltaTime
-        
+
     // Render
     renderer.render(scene, camera)
 
