@@ -1,0 +1,11 @@
+Model Information:
+* title:	The Well
+* source:	https://sketchfab.com/3d-models/the-well-a76594bd1ecf49948161d5eb5b88cf81
+* author:	admone (https://sketchfab.com/admone)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "The Well" (https://sketchfab.com/3d-models/the-well-a76594bd1ecf49948161d5eb5b88cf81) by admone (https://sketchfab.com/admone) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
